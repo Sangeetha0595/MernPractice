@@ -1,0 +1,160 @@
+/* div{
+    border: 1px solid black;
+    width: 400px;
+    height:400px;
+    background-image: linear-gradient(red,orange,blue)
+} */
+/* left to right */
+/* div{
+    border: 1px solid black;
+    width: 400px;
+    height:400px;
+    background-image: linear-gradient(to left,red,orange,blue)
+}  */
+
+
+/* div{
+    border: 1px solid black;
+    width: 400px;
+    height:400px;
+    background-image: linear-gradient(to top,red,orange,blue)
+} 
+the above is bottom to top */
+
+/* div{
+    border: 1px solid black;
+    width: 400px;
+    height:400px;
+    background-image: linear-gradient(red 70%,orange,blue)
+}  */
+
+/* 
+the above is the percentage and similar way we can give angle below is the example for the same */
+
+/* 
+div{
+    border: 1px solid black;
+    width: 400px;
+    height:400px;
+    background-image: repeating-linear-gradient(red 20%,orange 30%,Magenta 40%) */
+/* } */
+
+#first{
+    font-size: 100px;
+    width:800px;
+    /* background-color: red; */
+    background-image: linear-gradient(to right ,orange,blue,Magenta);
+    padding:10px;
+    font-weight:900;
+    font-family:sans-serif;
+    color: transparent;
+    background-clip: text;
+    /* i will cut the background where ever text is there is the definiton on above property */
+}
+#second
+{
+    border: 1px solid black;
+    width:300px;
+    height:100px;
+    background-color:black;
+    border-radius: 30px;
+    margin-left:300px;
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family:sans-serif;
+    font-style: italic;
+position: relative;
+}
+
+#second::before{
+    content:"";
+    border: 1px solid black;
+    width:110%;
+    height: 40%;
+    background-image: linear-gradient(to right,orange,blue,Magenta);
+    position: absolute;
+    top:90px;
+left: -10px;
+border-radius: 30px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+
+}
+
+#third{
+    border:1px solid black;
+    width: 500px;
+    height:500px;
+
+    background-image: radial-gradient(closest-side at 60% 55%,red,blue,green);
+}
+
+#fourth{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    background-image:  repeating-radial-gradient(circle , red , orange 10%,blue 15%);
+}
+
+#fifth{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(red , orange,yellow,blue,violet);
+}
+#sixth{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    /* background-image:conic-gradient(green 0deg, yellow  45deg, purple 90deg) */
+    background-image: conic-gradient(green 0deg,green 45deg, yellow  45deg,yellow  90deg, purple 90deg,purple 180deg,cyan 180deg , cyan 220deg,blue 220deg,blue 360deg);
+}
+
+#seventh{
+   font-size: 100px;
+   width: 1000px;
+   padding: 10px;
+   font-weight: 900;
+   font-family: sans-serif;
+
+  
+    /* background-image:conic-gradient(green 0deg, yellow  45deg, purple 90deg) */
+    background-image: conic-gradient(green ,blue, orange);
+ color:transparent;
+ background-clip: text;
+
+}
+#Eight{
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#nine{
+    border: 1px solid blue;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    padding:20px;
+    box-sizing: content-box;
+}
+/* /* 
+css MEasures units */
+
+/* px(pixels)
+%
+em  it is calculated from the parent  i.e for exam 3 em and parent hieght is 40px then 3* 40 = 120px
+rem */ 
+
+/* if parent is not there then the default font size value is 16px */
+/* so based on that the height or width will be calculated */
+/* 
+rem => it takes the width or height will be taken from the root tag i.e., the root tag */
+
+ /* always to use Relative Units (Parent and Child relationshitps) */
